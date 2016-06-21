@@ -69,16 +69,15 @@ $(function () {
                     }
                 },
                 series: [{
-                    name: 'Brands',
+                    name: 'Total',
                     colorByPoint: true,
                     data: [{
                         name: 'Auto',
                         y: auto
                     }, {
                         name: 'Camioneta',
-                        y: camioneta,
-                        sliced: true,
-                        selected: true
+                        y: camioneta
+
                     }, {
                         name: 'Autobus',
                         y: autobus

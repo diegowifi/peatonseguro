@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 fieldset {
     margin: 20px 0;
 }
@@ -20,4 +22,18 @@ input[name=api-key], input[name=feed-id] { width: 230px; }
 
 pre { white-space: pre-wrap; }
 
+
+h3{
+	background-color: #4183D7;
+	color: #FFF;
+	padding: 20px;
+	font-size: 26px !important;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom:60px !important;
+}
+
+#vehiculo{
+	margin-top: -25px !important;
+}
 
