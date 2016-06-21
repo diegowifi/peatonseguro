@@ -25,7 +25,10 @@
         var values = data.values;
 
         for (var i = 0; i < values.length; i++){
-            console.log("Timestamp: " + values[i].timestamp + " Value: " + values[i].value);
+            
+            var date = moment(values[i].timestamp).format('MMMM Do YYYY, h:mm:ss a');
+
+            console.log("Timestamp: " + date + " Value: " + values[i].value);
         }
     };
 
