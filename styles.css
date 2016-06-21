@@ -1,0 +1,22 @@
+fieldset {
+    margin: 20px 0;
+}
+
+legend {
+    color: #333;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+}
+
+input { margin-bottom: 10px; }
+
+input[name=api-key], input[name=feed-id] { width: 230px; }
+
+pre { white-space: pre-wrap; }
+
