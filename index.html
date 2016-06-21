@@ -1,15 +1,36 @@
 <!doctype html>
 <html>
   <head>
+  	<title>Peaton seguro analytics</title>
     <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
     <script src = "dist/m2x-3.1.0.js"></script>
     <script src = "jquery-1.10.2.min.js"></script>
     <script src = "moment.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/es.js"></script>
+    <script src = "http://code.highcharts.com/highcharts.js"></script>
     <script src = "m2x.js"></script>
+    <script src = "vehiculo-analytics.js"></script>
+    <script src = "infracciones-analytics.js"></script>
   </head>
 
   <body>
-
+		<h3>Analytics de peaton seguro</h3>
+		<div class="container">
+  		<div class="row">
+    		<div class="eight columns">
+					<div class="twelve columns">
+						<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+					</div>
+					<div class="twelve columns">Twelve</div>
+    		</div>
+    		<div class="four columns">
+    			<div class="twelve columns">
+    			<div id="vehiculo" style="min-width: 310px; height: 350px; max-width: 500px; margin: 0 auto"></div>
+    			</div>
+    		</div>
+  		</div>
+  	</div>
   </body>
 </html>
