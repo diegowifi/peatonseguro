@@ -28,11 +28,23 @@ Cylon.robot({
     });
 
       my.button.on('push', function(){
-          my.m2x.publish("boton", "1", function(err) {
-          if (err) {
-            console.log("err: ", err);
-          }
-        });
+
+          my.m2x.publish("boton", "1234,SFC-86-62,1", function(err) {
+            if (err) {
+              console.log("err: ", err);
+            }
+          });
+
+          var exec = require('child_process').exec, child;
+
+          child = exec('fswebcam -r 1280x720 image.jpeg',
+              function (error, stdout, stderr) {
+                  console.log('stdout: ' + stdout);
+                  console.log('stderr: ' + stderr);
+                  if (error !== null) {
+                       console.log('exec error: ' + error);
+                  }
+              });
       });
       
   }
